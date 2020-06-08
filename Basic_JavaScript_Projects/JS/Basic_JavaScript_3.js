@@ -37,4 +37,9 @@ function decrement() {
     document.getElementById("Math7").innerHTML = "Y-- = " + Y;
 }
 
+function negation_Operator() {
+    var Z = 10;
+    document.getElementById("Math8").innerHTML = -Z;
+}
+
 document.getElementById("demo").innerHTML = Math.PI;
