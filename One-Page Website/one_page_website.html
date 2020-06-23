@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang= "en">
+	<head>
+		<meta charset="utf-8">
+		<title>My Favorite Athletes</title>
+		<script src="JS/one_page_website.js"></script>
+		<link rel="stylesheet" href="./CSS/one_page_website.css">
+	</head>
+	<body>
+	
+		<!-- NAV -->
+		<div>
+			<div>
+				<ul>
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#gallery" id="link"><li>GALLERY</li></a>
+					<a href="#contact" id="link"><li>QUESTIONS</li></a>
+				</ul>
+			</div>
+		</div>
+		<!-- END NAV -->
+		
+		<!-- HOME -->
+		<div id="home">
+			<div>
+				<div>
+					<span>My Favorite Athletes</span>
+				</div>
+			</div>
+		</div>
+		<!-- END HOME -->
+		
+		<!-- GALLERY -->
+		<div id="gallery">
+		<h2 style="text-align:center">Lightbox</h2>
+
+		<div class="row">
+  <div class="column">
+    <img src="Img/allen.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Img/kobe.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Img/michael.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="Img/allen.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="Img/kobe.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="Img/michael.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="Img/allen.jpg" style="width:100%" onclick="currentSlide(1)" alt="Allen Iverson">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Img/kobe.jpg" style="width:100%" onclick="currentSlide(2)" alt="Kobe Bryant">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Img/michael.jpg" style="width:100%" onclick="currentSlide(3)" alt="Michael Jordan">
+    </div>
+  </div>
+</div>
+</div>
+			<!-- END GALLERY -->
+			
+			<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mf3Ju1gT91k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			<!-- RSVP -->
+			<section>
+				<div id="contact">
+					<div>
+						<h1>Questions</h1>
+						<div>
+							<h2><span>If you have any questions, please feel free to contact me.</span>
+								<br />Page down a bit...
+						</h2>
+						<p>
+						Please provide us with your basic contact information.
+						</p>
+						<div>
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email Address">
+								<input class="rsvp" type="text" value="Phone Number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END RSVP -->
+		
+		<!-- FOOTER -->
+		<div>
+			Vince Ceniccola 5/15/2020
+		</div>
+		<!-- END FOOTER -->
+		
+	</body>
+</html>
