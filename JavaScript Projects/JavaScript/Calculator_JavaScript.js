@@ -92,7 +92,7 @@ const keys = document.querySelector('.calculator-keys');
 keys.addEventListener('click', (event) => {
     // the target variable is an object that represents the element
     // that was clicked
-    const [ target ] = event;
+    const { target } = event;
     // if the element that was clicked on is not a button, exit the function
     if (!target.matches('button')) {
         return;
@@ -104,7 +104,7 @@ keys.addEventListener('click', (event) => {
         return;
     }
 
-    if (target,classList.contains('decimal')) {
+    if (target.classList.contains('decimal')) {
     Input_Decimal(target.value);
     Update_Display();
         return;
